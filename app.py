@@ -9,7 +9,7 @@ def index():
 
 
 @app.route("/data/<name>/<age>/<weight>")
-def data_get_name(name='default', age=0, weight=0):
+def data_get_name(name='default', age=0, weight=24):
     return jsonify([name, age, weight])
 
 
