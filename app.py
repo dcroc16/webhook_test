@@ -8,9 +8,9 @@ def index():
 
 
 
-@app.route("/data/<name>/<age>")
-def data_get_name(name='default', age=0):
-    return jsonify([name, age])
+@app.route("/data/<name>/<age>/<weight>")
+def data_get_name(name='default', age=0, weight=0):
+    return jsonify([name, age, weight])
 
 
 
